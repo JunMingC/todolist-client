@@ -1,80 +1,76 @@
-# Tech Stack
+# **Todo Management System - Client**
 
-Data Fetching & State Management: React Query (https://tkdodo.eu/blog/react-query-as-a-state-manager) \
-Coding Convention: Airbnb React/JSX Style Guide (https://github.com/airbnb/javascript/tree/master/react)
+This is the **client-side application** for the Todo Management System, developed using **React**. The application provides an intuitive interface for managing todos, including adding, editing, deleting, sorting, filtering and viewing tasks. It integrates seamlessly with the backend API to perform CRUD operations.
 
-# Versions
+## **Live Demo**
+Check out the live version hosted on Google Cloud Platform:
 
-node: 20.17.0\
-npm: 10.8.2
+- **Link:** [Todo Management System Client](https://todolist-client-433818.as.r.appspot.com/)
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Table of Contents**
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Environment Configuration](#environment-configuration)
+5. [Technologies Used](#technologies-used)
 
-## Available Scripts
+## **Features**
+- **Add Todo:** Easily add new tasks with titles, descriptions, and due dates.
+- **Edit Todo:** Modify existing tasks.
+- **Delete Todo:** Remove tasks that are no longer needed.
+- **Sort Todo List:** Sort tasks according to Due Date, Priority, Status, or Tags Count.
+- **Filter Todo List:** Filter tasks by Due Date, Priority, Status, or Tags Count.
+- **View Todo List:** Display all tasks with filters for priorities, statuses, and tags.
+- **Responsive Design:** Mobile-friendly layout for managing tasks on the go.
 
-In the project directory, you can run:
+## **Installation**
+Follow these steps to set up the React client on your local machine:
 
-### `npm start`
+### Prerequisites
+- **Node.js** (version 20.17.0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Setup Steps
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/JunMingC/todolist-client.git
+    cd todolist-client
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Switch to the required Node version (if using nvm):**
+    ```bash
+    nvm use 20.17.0
+    ```
 
-### `npm test`
+## **Usage**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+2. **Run the application locally:**
+    ```bash
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - The application will start and can be accessed in your browser at [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Environment Configuration**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To manage environment-specific settings, create and configure `.env` files for different environments (e.g., `.env.local`, `.env.live`). Example configuration for `.env` file:
 
-### `npm run eject`
+```plaintext
+REACT_APP_API_URL=https://todolist-433816.as.r.appspot.com/api/
+REACT_APP_VERSION=0.1.0
+REACT_APP_NAME=Todo Management System Client
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **API Endpoint:** Update `REACT_APP_API_URL` to point to your backend API hosted on GCP or your local environment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Technologies Used**
+- **Frontend:** React, React Hooks
+- **State Management:** React Query (for fetching, caching, and synchronizing data)
+- **Styling:** SASS
+- **Build Tool:** Create React App
+- **Hosting:** Google Cloud Platform (GCP)
