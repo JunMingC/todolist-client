@@ -1,0 +1,63 @@
+@import "../../styles/theme.scss";
+
+.sidenav-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    width: $sidenav-width;
+    overflow: hidden;
+    background-color: $sidenav-primary-bg-color;
+
+    .screen-xsmall &,
+    .screen-small & {
+        display: none;
+    }
+
+    .sidenav-header-container {
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $padding-primary;
+        background-color: $sidenav-header-bg-color;
+        border-bottom: solid 3px $border-color-primary;
+        flex-shrink: 0;
+
+        .sidenav-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: $text-accent
+            }
+        }
+    }
+
+    .sidenav-category-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+        padding: $padding-primary;
+
+        .sidenav-category-item {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: $text-accent
+            }
+
+            &.disabled {
+                opacity: 0.25;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

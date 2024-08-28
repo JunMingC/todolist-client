@@ -1,0 +1,7 @@
+@import "../../styles/theme.scss";
+
+.masterpage-container {
+    display: flex;
+    height: $page-height;
+    overflow: hidden;
+}

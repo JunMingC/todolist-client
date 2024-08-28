@@ -1,0 +1,12 @@
+@import "../../styles/theme.scss";
+
+.maincontent-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: $primary-bg-color;
+    padding: 16px 8px;
+    padding-bottom: 0;
+}

@@ -1,0 +1,69 @@
+@import "../../styles/theme.scss";
+
+.toolbar-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: $header-height;
+    padding: 0 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    .toolbar-content-container {
+        height: 64px;
+        width: 100%;
+        display: flex;
+        padding: 0 16px;
+        background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+        background-image: linear-gradient(159deg, rgb(36, 36, 46) 0%, rgb(36, 39, 41) 100%);
+        border-radius: $border-radius-primary;
+        gap: 16px;
+
+        .screen-xsmall & {
+            gap: 0;
+        }
+
+        .toolbar-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .toolbar-label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: $padding-small;
+                color: $text-secondary;
+
+                .screen-xsmall & {
+                    display: none;
+                }
+            }
+
+            .toolbar-input-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: $padding-small;
+
+                .toolbar-input {
+                    width: 100%;
+                    min-width: 120px;
+                    min-height: 40px;
+                    padding: 8px;
+                    font-size: 16px;
+                    background-color: #2d2d3a;
+                    color: $text-secondary;
+                    border-radius: $border-radius-primary;
+                    border-right: 10px solid transparent;
+                    cursor: pointer;
+
+                    .screen-xsmall & {
+                        min-width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
